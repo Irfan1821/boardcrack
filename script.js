@@ -43,3 +43,12 @@ form.addEventListener("submit", async (event) => {
     document.getElementById("payment-form-container").style.display = "none";
   }
 });
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
