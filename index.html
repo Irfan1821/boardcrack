@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crackboard - Coaching Institute</title>
+    <link rel="stylesheet" href="styles.css" />
+   
+  </head>
+  <body>
+   
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="data:image/png;base64,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"
+            alt="Crackboard Logo"
+          />
+          <a href="#home">Crackboard</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li>
+            <a href="#courses">Courses</a>
+            <ul class="dropdown">
+              <li><a href="#cbse-courses">CBSE Courses</a></li>
+              <li><a href="#bihar-courses">Bihar Board Courses</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="btn">Login/Register</button>
+              <div class="dropdown-content">
+                <a href="#login">Login</a>
+                <a href="#register">Register</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    
+
+
+    <!-- Hero Section -->
+<section class="hero" id="home">
+  <video autoplay muted loop class="background-video">
+      <source src="path_to_your_video.mp4" type="video/mp4"> <!-- Add your video URL here -->
+      Your browser does not support the video tag.
+  </video>
+  <div class="background-image"></div> <!-- Background image div -->
+  <div class="hero-content">
+      <h1>Welcome to Crackboard</h1>
+      <p>Your journey to academic excellence starts here.</p>
+      <a href="#courses" class="btn">Explore Courses</a>
+  </div>
+</section>
+
+    <!-- Courses Section -->
+    <section class="courses-section" id="courses">
+      <h2>Our Courses</h2>
+
+      <div class="board-section">
+        <h3 class="board-title">CBSE Courses</h3>
+        <div class="courses-list" id="cbse-courses">
+          <div class="course">
+            <img src="images/physics.jpg" alt="Physics Course" />
+            <h5>Physics for Class 9</h5>
+            <p>
+              Understand the fundamentals of Physics with our comprehensive
+              course.
+            </p>
+            <a href="#" class="cta-btn">Enroll Now</a>
+          </div>
+          <div class="course">
+            <img src="images/chemistry.jpg" alt="Chemistry Course" />
+            <h5>Chemistry for Class 10</h5>
+            <p>Explore the world of Chemistry through engaging lessons.</p>
+            <a href="#" class="cta-btn">Enroll Now</a>
+          </div>
+          <div class="course">
+            <img src="images/mathematics.jpg" alt="Mathematics Course" />
+            <h5>Mathematics for Class 11</h5>
+            <p>Master Mathematics concepts with our expert guidance.</p>
+            <a href="#" class="cta-btn">Enroll Now</a>
+          </div>
+          <div class="course">
+            <img src="images/biology.jpg" alt="Biology Course" />
+            <h5>Biology for Class 12</h5>
+            <p>
+              Dive deep into the world of Biology with our detailed curriculum.
+            </p>
+            <a href="#" class="cta-btn">Enroll Now</a>
+          </div>
+          <!-- Add more CBSE courses here -->
+        </div>
+      </div>
+      
+
+      <div class="board-section">
+        <h3 class="board-title">Bihar Board Courses</h3>
+        <div class="courses-list" id="bihar-courses">
+          <div class="course">
+            <img src="images/physics_bihar.jpg" alt="Physics Course" />
+            <h5>Physics for Class 9</h5>
+            <p>
+              Understand the fundamentals of Physics with our comprehensive
+              course.
+            </p>
+            <a href="#" class="cta-btn">Enroll Now</a>
+          </div>
+          <div class="course">
+            <img src="images/chemistry_bihar.jpg" alt="Chemistry Course" />
+            <h5>Chemistry for Class 10</h5>
+            <p>Explore the world of Chemistry through engaging lessons.</p>
+            <a href="#" class="cta-btn">Enroll Now</a>
+          </div>
+          <div class="course">
+            <img src="images/mathematics_bihar.jpg" alt="Mathematics Course" />
+            <h5>Mathematics for Class 11</h5>
+            <p>Master Mathematics concepts with our expert guidance.</p>
+            <a href="#" class="cta-btn">Enroll Now</a>
+          </div>
+          <div class="course">
+            <img src="images/biology_bihar.jpg" alt="Biology Course" />
+            <h5>Biology for Class 12</h5>
+            <p>
+              Dive deep into the world of Biology with our detailed curriculum.
+            </p>
+            <a href="#" class="cta-btn">Enroll Now</a>
+          </div>
+          <!-- Add more Bihar Board courses here -->
+        </div>
+      </div>
+      <div id="payment-form-container" style="display: none;">
+        <form id="payment-form">
+            <div id="card-element"><!-- A Stripe Element will be inserted here. --></div>
+            <button id="submit">Pay Now</button>
+            <div id="payment-result"></div>
+        </form>
+    </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+              Welcome to Crackboard, where we empower students to achieve their
+              academic goals. Our experienced educators provide comprehensive
+              coaching for CBSE and Bihar Board students in Classes 9 to 12.
+              With a focus on individualized learning and a supportive
+              environment, we ensure that every student reaches their full
+              potential.
+            </p>
+            <p>
+              At Crackboard, we believe in blending traditional teaching methods
+              with modern technology to create an engaging learning experience.
+              Join us in your journey to success!
+            </p>
+          </div>
+          <div class="about-image">
+            <img <a href="https://ibb.co/X2gY6Vd"><img src="https://i.ibb.co/ngvP4RV/Whats-App-Image-2024-10-16-at-9-56-09-PM.jpg" alt="Whats-App-Image-2024-10-16-at-9-56-09-PM" border="0" /></a> alt="Crackboard Learning" />
+            <!-- Add your image here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Contact Us Section -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Please fill out the form below.</p>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+
+    <footer>
+      <p>&copy; 2024 Crackboard. All Rights Reserved.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+    
+    
+  
+    
+
+  </body>
+</html>

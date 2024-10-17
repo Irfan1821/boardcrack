@@ -1,0 +1,814 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Logo Styles */
+.logo {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.logo img {
+  width: 50px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+/* Navigation Header */
+header {
+  background-color: #212529; /* Darker background for header */
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+nav {
+  display: flex; /* Use flexbox for navigation layout */
+  justify-content: space-between; /* Space between logo and nav links */
+  align-items: center; /* Center items vertically */
+}
+
+.logo a {
+  color: #f39c12; /* Bright color for logo */
+  font-size: 28px; /* Slightly larger logo */
+  text-decoration: none;
+  font-weight: bold; /* Bold font for the logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; /* Push nav links to the right */
+}
+
+.nav-links li {
+  position: relative; /* Necessary for dropdown positioning */
+  margin: 0 20px; /* Increased spacing between items */
+}
+
+.nav-links a {
+  color: white; /* Text color for nav links */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px; /* Add padding for better click area */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effects */
+}
+
+.nav-links a:hover {
+  background-color: #f39c12; /* Highlight background color on hover */
+  color: #212529; /* Change text color on hover */
+}
+
+.dropdown {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  top: 100%; /* Position below the parent li */
+  left: 0;
+  background-color: #495057; /* Darker background for dropdown */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.nav-links li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+  margin: 0; /* Remove margin from dropdown items */
+}
+
+.dropdown a {
+  display: block; /* Make dropdown links block elements */
+  padding: 10px 15px; /* Add padding for dropdown items */
+  color: white; /* Text color for dropdown links */
+}
+
+.dropdown a:hover {
+  background-color: #6c757d; /* Background color for dropdown item on hover */
+}
+
+/* Navigation Header */
+header {
+  background-color: #212529; /* Darker background for header */
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.logo a {
+  color: #f39c12; /* Bright color for logo */
+  font-size: 28px; /* Slightly larger logo */
+  text-decoration: none;
+  font-weight: bold; /* Bold font for the logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative; /* Necessary for dropdown positioning */
+  margin: 0 20px; /* Increased spacing between items */
+}
+
+.nav-links a {
+  color: white; /* Text color for nav links */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px; /* Add padding for better click area */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effects */
+}
+
+.nav-links a:hover {
+  background-color: #f39c12; /* Highlight background color on hover */
+  color: #212529; /* Change text color on hover */
+}
+
+.dropdown {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  top: 100%; /* Position below the parent li */
+  left: 0;
+  background-color: #495057; /* Darker background for dropdown */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.nav-links li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+  margin: 0; /* Remove margin from dropdown items */
+}
+
+.dropdown a {
+  display: block; /* Make dropdown links block elements */
+  padding: 10px 15px; /* Add padding for dropdown items */
+  color: white; /* Text color for dropdown links */
+}
+
+.dropdown a:hover {
+  background-color: #6c757d; /* Background color for dropdown item on hover */
+}
+
+/* Hero Section */
+.hero {
+  position: relative; /* Position relative for absolute positioning of content */
+  overflow: hidden; /* Hide overflow to keep the layout clean */
+  height: 100vh; /* Full height */
+}
+
+.background-video {
+  position: absolute; /* Position video absolutely */
+  top: 50%; /* Center video vertically */
+  left: 50%; /* Center video horizontally */
+  min-width: 100%; /* Ensure it covers full width */
+  min-height: 100%; /* Ensure it covers full height */
+  width: auto; /* Auto width */
+  height: auto; /* Auto height */
+  z-index: -2; /* Send video behind content */
+  transform: translate(-50%, -50%); /* Center the video */
+}
+
+.background-image {
+  position: absolute; /* Position image absolutely */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-image: url("C:\Users\Irfan Ansari\Desktop\My_Website\.vscode\crackboard\WhatsApp Image 2024-10-16 at 9.56.09 PM.png"); /* Add your image URL here */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  opacity: 0.5; /* Adjust opacity if needed */
+  z-index: -1; /* Send image behind content */
+}
+
+.hero-content {
+  position: relative; /* Keep content above video and image */
+  z-index: 1; /* Bring content above the video and image */
+  color: #fff; /* White text color for better visibility */
+  text-align: center; /* Center text */
+  padding: 20px; /* Padding for spacing */
+}
+
+.hero h1 {
+  font-size: 48px; /* Adjust font size */
+  margin: 0; /* Remove margin */
+}
+
+.hero p {
+  font-size: 20px; /* Adjust font size for the description */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.btn {
+  background-color: #007bff; /* Button color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Hero Section */
+.hero {
+  position: relative; /* Position relative for absolute positioning of content */
+  overflow: hidden; /* Hide overflow to keep the layout clean */
+}
+
+.background-video {
+  position: absolute; /* Position video absolutely */
+  top: 50%; /* Center video vertically */
+  left: 50%; /* Center video horizontally */
+  min-width: 100%; /* Ensure it covers full width */
+  min-height: 100%; /* Ensure it covers full height */
+  width: auto; /* Auto width */
+  height: auto; /* Auto height */
+  z-index: -2; /* Send video behind content */
+  transform: translate(-50%, -50%); /* Center the video */
+}
+
+.background-image {
+  position: absolute; /* Position image absolutely */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-image: url("path_to_your_image.png"); /* Add your image URL here */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  opacity: 0.5; /* Adjust opacity if needed */
+  z-index: -1; /* Send image behind content */
+}
+
+.hero-content {
+  position: relative; /* Keep content above video and image */
+  z-index: 1; /* Bring content above the video and image */
+  color: #fff; /* White text color for better visibility */
+  text-align: center; /* Center text */
+  padding: 20px; /* Padding for spacing */
+}
+
+.hero h1 {
+  font-size: 48px; /* Adjust font size */
+  margin: 0; /* Remove margin */
+}
+
+.hero p {
+  font-size: 20px; /* Adjust font size for the description */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.btn {
+  background-color: #007bff; /* Button color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Hero Section */
+.hero {
+  position: relative; /* Position relative for absolute positioning of content */
+  overflow: hidden; /* Hide overflow to keep the layout clean */
+}
+
+.background-video {
+  position: absolute; /* Position video absolutely */
+  top: 50%; /* Center video vertically */
+  left: 50%; /* Center video horizontally */
+  min-width: 100%; /* Ensure it covers full width */
+  min-height: 100%; /* Ensure it covers full height */
+  width: auto; /* Auto width */
+  height: auto; /* Auto height */
+  z-index: -1; /* Send video behind content */
+  transform: translate(-50%, -50%); /* Center the video */
+}
+
+.hero-content {
+  position: relative; /* Keep content above video */
+  z-index: 1; /* Bring content above the video */
+  color: #fff; /* White text color for better visibility */
+  text-align: center; /* Center text */
+  padding: 20px; /* Padding for spacing */
+}
+
+.hero h1 {
+  font-size: 48px; /* Adjust font size */
+  margin: 0; /* Remove margin */
+}
+
+.hero p {
+  font-size: 20px; /* Adjust font size for the description */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.btn {
+  background-color: #007bff; /* Button color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("images/hero-background.jpg"); /* Replace with your hero image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  text-align: center;
+  color: white; /* Text color */
+  position: relative; /* For overlay */
+}
+
+.hero::before {
+  content: ""; /* Create a pseudo-element for overlay */
+  position: absolute; /* Position it over the image */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+.hero-content {
+  position: relative; /* Position relative to the overlay */
+  z-index: 1; /* Ensure content is above overlay */
+}
+
+.hero h1 {
+  font-size: 48px; /* Large font size for headline */
+  margin-bottom: 20px; /* Space below headline */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+}
+
+.hero p {
+  font-size: 24px; /* Subheading size */
+  margin-bottom: 30px; /* Space below subheading */
+}
+
+.cta-btn {
+  background-color: #f39c12; /* Button color */
+  color: white; /* Text color for button */
+  padding: 15px 30px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Button font size */
+  transition: background-color 0.3s, transform 0.3s; /* Transition for effects */
+}
+
+.cta-btn:hover {
+  background-color: #e67e22; /* Darker color on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* About Us Section */
+.about {
+  background-color: #f1f1f1; /* Light gray background color */
+  padding: 60px 20px; /* Padding for spacing */
+}
+
+.about-container {
+  max-width: 1200px; /* Max width for the content */
+  margin: auto; /* Center the container */
+  padding: 40px; /* Padding around container */
+  background-color: #ffffff; /* White background for the content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-content {
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between text and image */
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+.about-text {
+  flex: 1; /* Allow text to take available space */
+  padding-right: 20px; /* Space between text and image */
+}
+
+.about-image {
+  flex: 0 0 300px; /* Fixed width for the image */
+}
+
+.about-image img {
+  width: 100%; /* Make image responsive */
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+.about h2 {
+  font-size: 36px; /* Larger font size for the heading */
+  margin-bottom: 20px; /* Space below heading */
+  color: #333; /* Dark color for heading */
+}
+
+.about p {
+  font-size: 18px; /* Font size for the paragraph */
+  margin-bottom: 20px; /* Space below paragraphs */
+  color: #555; /* Gray color for text */
+  line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Courses Section */
+.courses-section {
+  padding: 50px 20px;
+  background-color: #2c3e50; /* Dark background for courses section */
+  color: white; /* Text color */
+  text-align: center;
+}
+
+.board-section {
+  margin-bottom: 40px; /* Space between sections */
+}
+
+.board-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #f39c12; /* Highlight color for board titles */
+}
+
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between course cards */
+}
+
+/* Individual Course Card Styles */
+.course {
+  background-color: #333; /* Dark background for individual courses */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  width: 300px; /* Fixed width for courses */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth scaling effect */
+  position: relative; /* For hover effects */
+}
+
+.course img {
+  width: 100%; /* Responsive image */
+  border-radius: 5px;
+  transition: transform 0.3s; /* Image scale effect on hover */
+}
+
+.course h5 {
+  margin: 15px 0 10px;
+}
+
+.course p {
+  margin-bottom: 10px;
+}
+
+.course a {
+  display: inline-block;
+  background-color: #f39c12; /* Button color for course enrollment */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* Hover Effects */
+.course:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+}
+
+.course img:hover {
+  transform: scale(1.1); /* Scale up image on hover */
+}
+
+.course a:hover {
+  background-color: #e67e22; /* Button hover color */
+}
+
+/* Courses Section */
+.courses-section {
+  padding: 50px 20px;
+  background-color: #2c3e50; /* Dark background for courses section */
+  color: white; /* Text color */
+}
+
+.board-section {
+  margin-bottom: 40px; /* Space between sections */
+}
+
+.board-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course {
+  background-color: #333; /* Dark background for individual courses */
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 300px; /* Fixed width for courses */
+  transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.course img {
+  width: 100%; /* Responsive image */
+  border-radius: 5px;
+}
+
+.course h5 {
+  margin: 15px 0 10px;
+}
+
+.course p {
+  margin-bottom: 10px;
+}
+
+.course a {
+  display: inline-block;
+  background-color: #f39c12; /* Button color for course enrollment */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.course a:hover {
+  background-color: #e67e22; /* Button hover color */
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 600px; /* Limit form width */
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #e67e22; /* Button hover color */
+}
+
+/* Footer */
+footer {
+  background-color: #343a40; /* Dark footer */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Contact Us Section */
+.contact {
+  background-color: #343a40; /* Dark background color for professionalism */
+  padding: 60px 20px; /* Padding for spacing */
+  text-align: center; /* Center text */
+  color: white; /* Text color */
+}
+
+.contact-container {
+  max-width: 400px; /* Reduced width for a more compact form */
+  margin: auto; /* Center the container */
+  padding: 30px; /* Padding around container */
+  background-color: #495057; /* Darker background for the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for depth */
+}
+
+.contact h2 {
+  font-size: 28px; /* Adjusted font size for the heading */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.contact p {
+  font-size: 16px; /* Font size for the paragraph */
+  margin-bottom: 20px; /* Space below paragraph */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between form groups */
+  text-align: left; /* Align labels and inputs to the left */
+}
+
+label {
+  display: block; /* Block display for labels */
+  font-weight: bold; /* Bold for labels */
+  margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #ced4da; /* Border for inputs */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size for inputs */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #f39c12; /* Highlight border color on focus */
+  outline: none; /* Remove outline */
+}
+
+.submit-btn {
+  background-color: #f39c12; /* Button color */
+  color: white; /* Text color for button */
+  padding: 12px 20px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Font size for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.submit-btn:hover {
+  background-color: #e67e22; /* Darker color on hover */
+}
+
+#payment-form-container {
+  background-color: #f9f9f9; /* Light background for the form */
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#card-element {
+  padding: 10px;
+  border: 1px solid #ccc; /* Border for the card input */
+  border-radius: 5px;
+}
+#payment-form-container {
+  background-color: #f9f9f9; /* Light background for the form */
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#card-element {
+  padding: 10px;
+  border: 1px solid #ccc; /* Border for the card input */
+  border-radius: 5px;
+}
+
+.nav-links .btn {
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  padding: 10px 15px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* No underline */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.nav-links .btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.btn {
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  padding: 10px 15px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* No underline */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute; /* Position the dropdown */
+  background-color: white; /* Background color of dropdown */
+  min-width: 160px; /* Minimum width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow */
+  z-index: 1; /* Make sure dropdown is on top */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+  color: black; /* Link color */
+  padding: 12px 16px; /* Padding for links */
+  text-decoration: none; /* No underline */
+  display: block; /* Block display */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Background color on hover */
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.btn {
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  padding: 10px 15px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* No underline */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute; /* Position the dropdown */
+  background-color: white; /* Background color of dropdown */
+  min-width: 160px; /* Minimum width */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow */
+  z-index: 1; /* Make sure dropdown is on top */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+  color: black; /* Link color */
+  padding: 12px 16px; /* Padding for links */
+  text-decoration: none; /* No underline */
+  display: block; /* Block display */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Background color on hover */
+}
