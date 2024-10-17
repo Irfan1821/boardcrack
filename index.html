@@ -15,10 +15,14 @@
           <img src="logo.png" alt="Crackboard Logo" />
           <a href="#home">Crackboard</a>
         </div>
-        <ul class="nav-links">
+        
+        <!-- Mobile Menu Icon -->
+        <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+        
+        <ul class="nav-links" id="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          
+    
           <!-- Dropdown for Courses -->
           <li class="dropdown">
             <a href="#courses" class="nav-item">Courses</a>
@@ -41,6 +45,14 @@
         </ul>
       </nav>
     </header>
+    
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('active');
+      }
+    </script>
+    
     
     
     
